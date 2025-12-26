@@ -7,36 +7,40 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #e0e0e0;
+    background: #0a0a0a;
     min-height: 100vh;
     padding: 20px;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: #121212;
+    border-radius: 0;
+    box-shadow: none;
     overflow: hidden;
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px 20px;
+    background: #121212;
+    color: #ffffff;
+    padding: 60px 20px 40px;
     text-align: center;
+    border-bottom: 1px solid #2a2a2a;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    font-size: 1.2em;
-    opacity: 0.9;
+    font-size: 0.95em;
+    opacity: 0.6;
+    font-weight: 300;
 }
 
 main {
@@ -45,49 +49,57 @@ main {
 
 .links-section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #667eea;
-    font-size: 2em;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }
 
 .link-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 1px;
     margin-top: 30px;
+    background: #2a2a2a;
 }
 
 .link-card {
-    background: #f8f9fa;
-    border: 2px solid #e9ecef;
-    border-radius: 10px;
-    padding: 30px 20px;
+    background: #121212;
+    border: none;
+    border-radius: 0;
+    padding: 40px 20px;
     text-align: center;
     text-decoration: none;
-    color: #333;
-    transition: all 0.3s ease;
+    color: #e0e0e0;
+    transition: background 0.2s ease;
 }
 
 .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-    border-color: #667eea;
+    background: #1a1a1a;
+    transform: none;
+    box-shadow: none;
 }
 
 .icon {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 15px;
+    opacity: 0.7;
 }
 
 .link-card h3 {
-    color: #667eea;
-    margin-bottom: 10px;
-    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .link-card p {
-    color: #666;
-    font-size: 0.95em;
+    color: #888;
+    font-size: 0.85em;
+    font-weight: 300;
 }
 
 .content-page {
@@ -95,21 +107,24 @@ main {
 }
 
 .content-page h2 {
-    color: #667eea;
-    margin-bottom: 20px;
-    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 400;
 }
 
 .content-page h3 {
-    color: #764ba2;
-    margin-top: 25px;
+    color: #ffffff;
+    margin-top: 30px;
     margin-bottom: 15px;
-    font-size: 1.4em;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
 .content-page p {
     margin-bottom: 15px;
-    color: #555;
+    color: #b0b0b0;
+    font-weight: 300;
 }
 
 .content-page ul {
@@ -119,41 +134,45 @@ main {
 
 .content-page li {
     margin-bottom: 8px;
-    color: #555;
+    color: #b0b0b0;
+    font-weight: 300;
 }
 
 .back-link {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 12px 24px;
-    background: #667eea;
-    color: white;
+    background: #1a1a1a;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 0;
+    transition: background 0.2s ease;
+    border: 1px solid #2a2a2a;
+    font-size: 0.9em;
 }
 
 .back-link:hover {
-    background: #764ba2;
+    background: #2a2a2a;
 }
 
 .contact-info {
-    background: #f8f9fa;
-    border-left: 4px solid #667eea;
+    background: #1a1a1a;
+    border-left: 2px solid #ffffff;
     padding: 20px;
     margin: 20px 0;
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 .contact-info h3 {
     margin-top: 0;
-    color: #667eea;
+    color: #ffffff;
+    font-weight: 400;
 }
 
 .email-link {
-    color: #667eea;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.1em;
 }
 
@@ -162,11 +181,30 @@ main {
 }
 
 footer {
-    background: #f8f9fa;
+    background: #121212;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     color: #666;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid #2a2a2a;
+    font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-page {
+        padding: 30px 15px;
+    }
+    
+    body {
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
